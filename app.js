@@ -1,22 +1,21 @@
 // 1
 for (let i = 1; i<=100; i++) {
-    if (i%2==1) {
+    if (i%2===1) {
         console.log(i);
     }
 }
 
 // 2
 for (let i = 0; i<=100; i++) {
-    console.log(i);
-    if ((i%3 == 0)&&((i%5 == 0))) {
-        console.log("FizzBuzz");
+    if ((i%3 === 0)&&((i%5 === 0))) {
+        console.log(`${i}: FizzBuzz`);
         continue;
     }
-    if (i%3 == 0) {
-        console.log("fizz");
+    else if (i%3 === 0) {
+        console.log(`${i}: fizz`);
     }
-    if (i%5 == 0) {
-        console.log("buzz");
+    else if (i%5 === 0) {
+        console.log(`${i}: buzz`);
     }
 }
 
@@ -24,7 +23,7 @@ for (let i = 0; i<=100; i++) {
 let i = 0;
 do {
     i++
-    if (i%2==1) {
+    if (i%2===1) {
         console.log(i);
     }
 } while (i<100)
@@ -32,16 +31,15 @@ do {
 i = 0;
 do {
     i ++
-    console.log(i);
-    if ((i%3 == 0)&&((i%5 == 0))) {
-        console.log("FizzBuzz");
+    if ((i%3 === 0)&&((i%5 === 0))) {
+        console.log(`${i}: FizzBuzz`);
         continue;
     }
-    if (i%3 == 0) {
-        console.log("fizz");
+    else if (i%3 === 0) {
+        console.log(`${i}: fizz`);
     }
-    if (i%5 == 0) {
-        console.log("buzz");
+    else if (i%5 === 0) {
+        console.log(`${i}: buzz`);
     }
 } while (i<100)
 
@@ -71,15 +69,14 @@ console.log(`Start ${start}`);
 console.log(`End ${end}`);
 
 for (let i = start; i<=end; i++) {
-    console.log(i);
-    if ((i%fizzDivisor == 0)&&((i%buzzDivisor == 0))) {
-        console.log("FizzBuzz");
+    if ((i%fizzDivisor === 0)&&((i%buzzDivisor === 0))) {
+        console.log(`${i}: FizzBuzz`);
         continue;
     }
-    if (i%fizzDivisor == 0) {
-        console.log("fizz");
+    else if (i%fizzDivisor === 0) {
+        console.log(`${i}: fizz`);
     }
-    if (i%buzzDivisor == 0) {
-        console.log("buzz");
+    else if (i%buzzDivisor === 0) {
+        console.log(`${i}: buzz`);
     }
 }
